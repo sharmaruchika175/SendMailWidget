@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Sending email to contacts</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="sendmail.css">
+</head>
+<body>
+	<div class = "main-container">
+		<form id = "email-form">
+			<div class ="contact-details container">
+				<label for = "contacts" >Contacts</label><br>
+				<div class = "main-contact-container">
+					<input class="emailaddress" type = "email"/>	
+					<div class ="add-icon">+</div>
+				</div>
+				<div class = "contact-message error"></div>
+			</div>
+			<div class = "emailsender-wrappper">
+				<input type = "text" name = "emailaddresses" class = "emailaddresses"/>
+			</div>
+			<div class = "container">
+				<label for = "subject">Subject</label><br>
+				<input type = "text" class ="subject border-pattern" name = "subject" placeholder = "You can add a subject" />
+				<div class = "subject-message error"></div>
+			</div>
+			<div class = "container">
+				<label for = "message">Message</label><br>
+				<textarea class = "message border-pattern" placeholder = "Leave your message here" name = "message"></textarea>
+			</div>	
+		</form>
+		<div class = "checkbox-sendbutton">
+			<div class = "sent-message"></div>
+			<div class = "checkbox-container">
+				<input type = "checkbox" id ="check" />
+				<label for ="check" class = "checkbox-label">Save a Copy</label>
+			</div>
+			<div class = "button-container">
+				<button class = "send-button">
+					<span class = "play-icon"><img src="image/play_button.png"></span>
+					<span class = "label">Send mail</span>
+				</button>
+			</div>
+		</div>
+	</div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script type="text/javascript" src="sendmail.js"></script>

@@ -1,0 +1,48 @@
+@CHARSET "ISO-8859-1";
+@media only screen and (max-width: 767px){
+	.main-container { width:300px; font-size: 15px;}
+    .send-button { font-size: 15px;}
+    .checkbox-label {font-size: 12px;}
+    .send-button span {margin: 6px 0 0 5px}
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+	.main-container {width:350px; font-size: 15px;}
+    .send-button {font-size: 15px;}
+    .send-button span {margin: 6px 0 0 10px}
+    
+}
+@media only screen and (min-width: 1024px) {
+	.main-container { width:440px; font-size: 18px;}
+    .send-button { font-size: 18px;}
+    .send-button span {margin: 6px 0 0 15px}
+}
+input:focus {outline:none;}
+#email-form {padding:20px 30px; height:69%;}
+.main-container {height:450px; border: 1px solid #ece7e7; color: #72665d;border-radius: 5px;}
+.main-contact-container { height:40px;width:97%; border: 1px solid #ece7e7 ;border-radius: 5px;margin-top: 5px;padding-left:5px;}
+
+.main-contact-container .contact { float:left; margin: 5px 0 0 5px; padding: 5px 5px; width: 33%;color: #ffffff;border-radius: 5px;overflow: hidden;text-overflow: ellipsis;text-align: center;}
+.main-contact-container .contact.even {background-color: #599eaa;}
+.main-contact-container .contact.odd {background-color: #249b60;}
+
+
+.add-icon {cursor:pointer; float:right; width:10%; height: 80%; line-height: 33px; font-size:40px; margin:4px; border-radius: 5px; font-weight: bold; text-align: center; color: white; background-color: #72665d;}
+.emailaddress {border: none;width: 82%;height: 80%;margin-top: 3px;padding-left: 10px;}
+.send-button { color: #ffffff;width: 100%; height: 40px; background-color: #e97110; border-radius: 5px; border: none;}
+.contact-details {width:100%;}
+.subject {height: 40px;padding: 0 10px;}
+.message {height: 90px; padding: 10px;}
+.border-pattern {width:93%; border: 1px solid #ece7e7 ;border-radius: 5px;margin-top: 5px;}
+.checkbox-sendbutton {background-color: #ece7e7;height: 20%;margin-top: 10px;}
+.checkbox-container {width: 30%;float: left;padding: 15px 15px 15px 30px;}
+.button-container {float: right; width:40%; padding: 5px 30px 5px 10px;}
+.checkbox-sendbutton:after {content: ""; clear: both;}
+.error {font-size: 11px;color: red;}
+.container {margin: 12px 0;}
+.sent-message {height: 22px; text-align: center;}
+.emailsender-wrappper {display:none;}
+#check {transform: scale(1.4);}
+.disabled {background-color :#ece7e7;}
+.send-button span {float: left}
+.send-button span.label {padding-top: 2px;}
+.play-icon img {width: 25px;}
