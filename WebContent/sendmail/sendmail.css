@@ -21,7 +21,7 @@ input:focus {outline:none;}
 .main-container {height:450px; border: 1px solid #ece7e7; color: #72665d;border-radius: 5px;}
 .main-contact-container { height:40px;width:97%; border: 1px solid #ece7e7 ;border-radius: 5px;margin-top: 5px;padding-left:5px;}
 
-.main-contact-container .contact { float:left; margin: 5px 0 0 5px; padding: 5px 5px; width: 33%;color: #ffffff;border-radius: 5px;overflow: hidden;text-overflow: ellipsis;text-align: center;}
+.main-contact-container .contact { position: relative; float:left; margin: 5px 0 0 5px; padding: 5px 5px; width: 33%;color: #ffffff;border-radius: 5px;overflow: hidden;text-overflow: ellipsis;text-align: center;}
 .main-contact-container .contact.even {background-color: #599eaa;}
 .main-contact-container .contact.odd {background-color: #249b60;}
 
@@ -46,3 +46,4 @@ input:focus {outline:none;}
 .send-button span {float: left}
 .send-button span.label {padding-top: 2px;}
 .play-icon img {width: 25px;}
+.contact a {background: url(image/close.png) no-repeat; background-size: 10px 10px; height: 15px; width: 15px; position: absolute;top: 2px;right: 0px;}

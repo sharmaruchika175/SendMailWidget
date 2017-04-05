@@ -80,9 +80,16 @@
 		var contactsCount = $(".main-contact-container .contact").length;
 		var oddEven = (contactsCount % 2 == 0) ? 'even' : 'odd';
 		var newContactDiv = $('<div></div>').addClass("contact " + oddEven).text($cache.emailAddressInput.val());
+		var closeContact =  $("<a></a>").addClass("close-contact");
+		newContactDiv.append(closeContact);
 		$cache.emailAddressInput.before(newContactDiv);
 		$cache.emailAddressInput.val("");
-		adjustWidthAndAddIcon();		
+		adjustWidthAndAddIcon();	
+		
+		$("a.close-contact").on("click", function(){
+			$(this).parent().remove();
+			adjustWidth();
+		});
 	}
 	function adjustWidthAndAddIcon() {
 		var mainContactContainerWidth = $cache.mainContactContainer.width();
